@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DarkDrop Studios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>DarkDrop <span>Studios</span></h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" id="loginBtn">Login</a>
+      <a href="#" id="signupBtn">Create Account</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Theme Palettes</h2>
+      <p>Curated collections of decor items to complement your home's aesthetic.</p>
+    </section>
+
+    <section class="products" id="productList">
+      <!-- Products dynamically injected by JS -->
+    </section>
+
+    <aside class="cart">
+      <h3>Cart</h3>
+      <ul id="cartItems"></ul>
+      <button id="checkoutBtn">Checkout</button>
+    </aside>
+  </main>
+
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h3>Login</h3>
+      <input type="text" placeholder="Username"/>
+      <input type="password" placeholder="Password"/>
+      <button>Login</button>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div class="modal" id="signupModal">
+    <div class="modal-content">
+      <span class="close" id="closeSignup">&times;</span>
+      <h3>Create Account</h3>
+      <input type="text" placeholder="Username"/>
+      <input type="email" placeholder="Email"/>
+      <input type="password" placeholder="Password"/>
+      <button>Create</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
